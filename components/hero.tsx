@@ -53,7 +53,7 @@ export function Hero() {
         <div className="hero-figure" data-build="pop" data-label="Portrait">
           <div className="hero-glow" aria-hidden="true" />
           <img
-            src="/portrait.png?v=2"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/portrait.png?v=2`}
             alt={`Portrait of ${person.name}`}
             width={819}
             height={1024}
